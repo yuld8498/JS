@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange</title>
+</head>
+<body>
+    <script src="currency.js"></script>
+    <table>
+        <thead>
+            <tr>
+                <td>Amount</td>
+                <td colspan="3">From Currency</td>
+                <td>To Currency</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="number" id="amount"></td>
+                <td colspan="3">
+                    <select id="fromc">
+                        <option value="VND">VND</option>
+                        <option value="USD">USD</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="toc">
+                        <option value="VND">VND</option>
+                        <option value="USD">USD</option>
+                    </select>
+                </td>
+                <td><button onclick=myFunction()>Convert</button></td>
+            </tr>
+        </thead>
+    </table>
+    <p id="showmemoney"></p>
+</body>
+</html>
