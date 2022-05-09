@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        var i = 10; f = 20.5; b=true; s="Hà Nội"        
+        document.write(i,'<br>') 
+        document.write(f,'<br>')
+        document.write(b,'<br>')
+        document.write(s,'<br>');
+        document.write('<br>')
+        document.write('<br>')
+        document.write('<br>')
+        var width= 20; height = 10; Schunhat = width* height;
+        document.write('dien tich hinh chu nhat la: ', Schunhat);
+    </script> -->
+<!-- <input type="number" id="soa"> nhap vao so a <br>
+<input type="number" id="sob">nhap vao so b<br>
+<button onclick="myFunction"> Check !</button><br>
+<s>
+    function myFunction(){
+        var a = $(this).val();
+        $("p#soa").number.value;
+        var b = $(this).val();
+        $("p#sob").number.value;
+        if(a%b==0){
+            document.write('a la boi so cua b')
+        }
+        else{
+            document.write('a khong phai la boi cua b')
+        }
+
+    } -->
+    <label><input id="soa" type="number" name="number" value=""> Số a</label><br><br>
+    <label><input id="sob" type="number" name="number"  maxlength="60" value=""> Số b</label><br><br>
+    <p id="sosanh"></p>
+    <button onclick="myFunction()">So sánh</button>
+    <script>
+        function myFunction(){
+            var a = document.getElementById('soa').value;
+            var b=document.getElementById('sob').value;
+            if (a%b==0) {
+                alert("a là bội số của b");
+                
+            }
+            else{
+                alert('a không phải là bội số của b');
+            }
+        }
+    </script>
+</body>
+</html>
