@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--     
+    <script>
+        var a=prompt("what is the office name of javascript")
+        if (a=="ECMAscript") {
+            alert("right")
+        } else {
+            alert("did not know ECMAscript")
+        }
+    </script> -->
+    <p id="show"></p>
+    <script>
+        var id = prompt("nhập id")
+        if (id == "admin") {
+            pass = prompt("nhập password")
+            if (pass == "themaster") {
+                document.getElementById("show").innerHTML="Welcome";
+            } else {
+                if (pass == "") {
+                alert('canceled')
+                } else {
+                    
+                }
+                alert("wrong password")
+            }
+        } else {
+            alert("i don't know you")
+        }
+    </script>
+</body>
+</html>
