@@ -43,13 +43,36 @@
             var diemtb = tong/3;
             document.getElementById('tong').innerHTML= tong;
             document.getElementById('dtb').innerHTML= diemtb;
-       }
+       
        function myFunction2(){
             var a = document.getElementById('nhietdo').value;
             var doC = (a*1.8+32);
             document.getElementById('doF').innerHTML=doC;
        }
+            if (diemtb>=8){
+                if (diemtb >=9){
+                    document.write("xuat sac")
+                }
+                    else {
+                        document.write('gioi')
+                    }
+                } 
+                else {
+                    if (diemtb>=7){
+                        document.write('kha')}
+                        else {
+                            if (diemtb>=5){
+                                document.write('tb')
+                            }
+                            else{
+                                document.write('yeu')
+                            }
+                        }
+                    }
+        }
+   
     </script>
+    
     
 
 </body>

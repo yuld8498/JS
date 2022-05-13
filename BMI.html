@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You BMI</title>
+</head>
+<body>
+    <script>
+            let height = Number(prompt("nhập vào chiều cao"))
+            let weight = Number(prompt("nhập vào cân nặng"))
+            let BMI = weight / (height* height);
+            document.write(BMI >= 30 ? "obese" : BMI >= 25 ? "Overweight" : BMI >= 18.5 ? "Normal" : "UnderWeight")
+    </script>
+</body>
+</html>

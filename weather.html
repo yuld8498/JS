@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let nhietdo;
+        nhietdo = prompt("nhap vao nhiet do")
+        let temp = parseInt(nhietdo);
+        if (temp < 0){
+            alert("hôm nay thời tiết băng giá")
+        }
+        if ((0 <= temp) &&(temp< 10)){
+            alert("hôm nay có tuyết")
+        }
+        if ((10<= temp)&& (temp< 15)){
+            alert("hôm nay trời rét")
+        }
+        if ((15<= temp) &&(temp< 25)){
+            alert("hôm nay trời mát")
+        }
+        if ((25<= temp)&&(temp<= 30)){
+            alert("hôm nay trời nóng")
+        }
+        if (temp > 30){
+            alert("hôm nay thời tiết nguy hiểm")
+        }
+    </script>
+</body>
+</html>

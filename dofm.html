@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Số ngày trong 1 tháng</title>
+</head>
+<body>
+    <script>
+        let month = Number(prompt("nhập tháng cần xem số ngày"))
+        if ( month >12) {
+            alert("nhập lại tháng")
+        } else {
+            if (month<1) {
+                alert("nhập lại tháng")
+            } else {
+                    if (month >7) {
+                    if (month %2 ==0){
+                        alert("tháng này có 31 ngày")
+                    }else{
+                        alert("tháng này có 30 ngày")
+                    }
+                } else {
+                    if (month %2 !=0) {
+                        alert("tháng này có 31 ngày")
+                    } else {
+                        if (month == 2) {
+                            alert("tháng này có 29 vào năm thường và 28 ngày nếu năm nhuận")
+                        } else {
+                            alert("tháng này có 30 ngày")
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
