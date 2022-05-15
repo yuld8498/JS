@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime</title>
+</head>
+<body>
+    <script>
+        // let box;
+        // box = '<table border="1" width="200" cellspacing="0" cellpadding="3">' ;
+        //     for (w =1 ; w<=10; w++)
+        //     {
+        //         box = box + '<tr>';
+        //             for (h =1 ; h<=10; h++)
+        //             {
+        //                 box = box + '<td>' + w * h + '</td>';
+        //             }
+        //         box = box + '</tr>';
+        //     }
+        //     box = box +'</table>';
+        //     document.write(box);
+    //     let box,w,h;
+    //     box = '<table border="1" width="200" cellspacing="0" cellpadding="3">' ;
+    //         w =h = 1;
+    //         while (w <= 10)
+    //         {
+    //             box = box + '<tr>';
+    //                 while (h<=10)
+    //                 {
+    //                     box = box + '<td>' + w * h + '</td>';
+    //                     h++;
+    //                 }
+    //             box = box + '</tr>';
+    //             h = 1;
+    //             w++;
+    //         }
+    //         box = box +'</table>';
+    //         document.write(box);
+//     let doc, ngang, tich, box;
+//     box ="<table border = 1 width = 900 height = 400 cellspacing='0' cellpadding='0' text-align = 'center'>";
+//     doc = 1; ngang =2; 
+//     while ( ngang < 10){
+//         box = box +"<tr style=width: 300px ;>";
+//             while (doc <10){
+//                 box =box + "<Td style=width: 300px ;>" + ngang+"x" + doc +"=" + doc*ngang +"</td>";
+//                     doc++;
+//             }
+//             box =box +"</tr>";
+//             doc =1;
+//             ngang++;
+//     }
+//     box =box + "</table>";
+//     document.write(box);
+let number = +prompt("Nhap N: ");
+        let i,j, count = 0, dem = 0;
+        for (i = 1; i > 0; i++) {
+            if (count < number) {
+                for (j = 1; j <= i; j++) {
+                    if (i % j == 0) {
+                        dem++;
+                    }
+                }
+                if (dem == 2) {
+                    document.write(i + "<br>");
+                    count++;
+                }
+                dem = 0;
+            }
+            else {
+            break;
+        }}
+</script>
+</body>
+</html>
