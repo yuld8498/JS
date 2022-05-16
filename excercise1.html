@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for (let i = 0 ; i < 100; i++){
+        //     if (i ==99){
+        //         document.write("hoàn thành")
+        //     }
+        // }
+        // let nhietdo = prompt("nhập vào nhiệt độ")
+        // let c,d; 
+        // let f=0;
+        // let  a=1;
+        // let  b=1;
+        // for (let i=0; i<20; i++){
+        //     +(c = a + b);
+        //     +(d=c);
+        //     +(a= c -a);
+        //     +(b=d);
+        //     +(f=f+c);
+        // }
+        // document.write(f);.
+    //     let sum=0;
+    //     let count=0;
+    //     for ( var i=1; i>0;i++){
+    //         if (count < 30) {
+    //             if (i % 7 ==0){
+    //                 sum = sum + i;
+    //                 count++;
+    //             }
+    //         }
+        
+    //         else {
+    //             break;
+    //     }
+    // }
+    // document.write(sum);
+    // for (i =0 ; i < 100; i++){
+    //     document.write(i%3==0&&i%5==0 ? "FizzBuzz"+i + "<br>" : i%3 ==0 ? "FIzz"+i + "<br>" : i%5 ==0 ? "buzz"+i + "<br>": "")
+
+    // }
+    //     if (i % 3==0&& i%5==0) {
+    //         document.write("FizzBuzz"+ i + "<br>")
+    //     } else {
+    //         if (i % 3==0) {
+    //             document.write("Fizz"+ i + "<br>")
+    //         } else {
+    //             if(i % 5==0){
+    //                 document.write("Buzz" +i + "<br>")
+    //             }
+    //         }
+    //     }
+    // }
+    let min=0;
+ min = Number(prompt("nhập vào min"));
+for (; Number.isNaN(min) || min <0 ;){
+    min = Number(prompt("nhập vào lại"));
+}
+let max=0;
+ max = Number(prompt("nhập vào max"));
+for (; Number.isNaN(max) || max < min ;){
+    max = Number(prompt("nhập vào lại"));
+}
+let randomnumber= Number(Math.floor(Math.random()*(max -min+1)+min));
+let inputnumber = Number(prompt("nhập số bạn đoán"))
+for (; Number.isNaN(inputnumber)|| inputnumber < min || inputnumber> max;){
+    inputnumber = Number(prompt("nhập lại số đoán"))}
+for (;;){
+    if (inputnumber == randomnumber) {
+        alert("bạn đã đoán đúng");
+        document.write(randomnumber);
+        break;
+    } else {
+        inputnumber = Number(prompt("bạn được đoán lại"))
+        randomnumber= Number(Math.floor(Math.random()*(max -min+1)+min));
+    }
+}
+    </script>
+
+
+</body>
+</html>
