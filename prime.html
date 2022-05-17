@@ -53,24 +53,61 @@
 //     }
 //     box =box + "</table>";
 //     document.write(box);
-let number = +prompt("Nhap N: ");
-        let i,j, count = 0, dem = 0;
-        for (i = 1; i > 0; i++) {
-            if (count < number) {
-                for (j = 1; j <= i; j++) {
-                    if (i % j == 0) {
-                        dem++;
-                    }
-                }
-                if (dem == 2) {
-                    document.write(i + "<br>");
-                    count++;
-                }
-                dem = 0;
+// let number = +prompt("Nhap N: ");
+//         let i=1,j=1, countP = 0, count = 0;
+//         while(countP < number) {
+//                 for (j = 1; j <= i; j++) {
+//                     if (i % j == 0) {
+//                         count++;
+//                     }}
+//                 if (count == 2) {
+//                     document.write(i + "<br>");
+//                     countP++;
+//                     count = 0;
+//                     i++;
+//             }else{
+//                 i++;
+//                 count=0;
+//             }
+//         }
+        // for (i = 1; i > 0; i++) {
+        //     if (countP < number) {
+        //         for (j = 1; j <= i; j++) {
+        //             if (i % j == 0) {
+        //                 count++;
+        //             }
+        //         }
+        //         if (count == 2) {
+        //             document.write(i + "<br>");
+        //             countP++;
+        //         }
+        //         count = 0;
+        //     }
+        //     else {
+        //     break;
+        // }}
+        for (let j=1;j<=5;j++){
+        for (let i=1;i<=5;i++){
+            if (i>=j) {
+                document.write("*")
+            } else {
+                document.write("&nbsp;&nbsp;")
             }
-            else {
-            break;
-        }}
+        }
+        document.write("<br>")
+    }
+    count =5;
+    for (let j=1;j<=5;j++){
+        for (let i=1;i<=5;i++){
+            if (i<=count) {
+                document.write("*")
+            } else {
+                document.write("&nbsp;&nbsp;")
+            }
+        }
+        document.write("<br>")
+        count=count-1;
+    }
 </script>
 </body>
 </html>

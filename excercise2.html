@@ -24,17 +24,162 @@
         //     factorial *= count;
         // }  
         // document.write(factorial);
-        for (j=0;j<4;j++){
-        let c="";
-        for (let i=0; i<4;i++){
-            for ( let a=0; a<=i; a++){
-                c+="*"
+    //     for (j=0;j<4;j++){
+    //     let c="";
+    //     for (let i=0; i<4;i++){
+    //         for ( let a=0; a<=i; a++){
+    //             c+="*"
+    //         }
+    //     let box=document.write(c+"<br>")
+    //     c= "";
+    //     }
+    // }
+    // for(let i=0; i<7;i++){
+    //     if (i==0||i==6) {
+    //         for (let j=0; j<21; j++){
+    //             document.write("*")
+    //         }
+    //         document.write("<br>")
+    //     } else {
+    //         for ( let j=0; j<21;j++){
+    //             if( j==0||j==20){
+    //                 document.write("*");
+    //             }else{
+    //                 document.write("");
+    //             }
+    //         }
+    //         document.write("<br>")
+    //     }
+    // }
+    // for(let i=1; i<21;i++){
+    //     document.write(`<button onclick="alert(${i})">${i}</button><br>`)
+    // }
+    // for(let i=1;i<=5;i++){
+    //     document.write(`<li>Heading${i}</li>`)
+    //     for(let j=1;j<4;j++){
+    //         document.write(`<ol>${j}. Heading${i}.${j}</ol>`)
+    //     }
+    // }
+        // document.write("<table border =1>")
+        //     for(let i=1;i<10;i++){
+        //         document.write("<tr>")
+        //             for (let j=2;j<10;j++){
+        //            document.write(`<td width=100px  style="background-color:${j%2==0 ?"green":"yellow"};">${j}x${i}=${i*j}</td>`)
+        //             }
+        //         document.write("</td>")
+        //     }
+        // document.write("</table>")
+       
+    //     document.write("<table border =1>")
+    //         for (let i=0;i<8;i++){
+    //             document.write("<tr height=60>")
+    //                 for (let j=0;j<8;j++){
+    //                     let x =Math.floor(Math.random()*(256 - 1 + 1) + 1)
+    //                     let y =Math.floor(Math.random()*(256 - 1 + 1) + 1)
+    //                     let z =Math.floor(Math.random()*(256 - 1 + 1) + 1)
+    //                     document.write(`<td width=60 style="background-color: rgb(${x},${y},${z})"}></td>`)
+    //                 }
+    //             document.write("</tr>")
+    //         }
+    //     document.write("</table>")
+    // for (let j=1;j<=7;j++){
+    //     if (j==1||j==7) {
+    //         for(let i=0;i<21;i++){
+    //             document.write("*")
+    //         }
+    //     } else {
+    //         for(i=0;i<21;i++){
+    //             if (i==0||i==20) {
+    //                 document.write("*")
+    //             } else {
+    //                 document.write("&nbsp;&nbsp")
+    //             }
+    //     }
+    //     }document.write("<br>")
+    // }
+    for (let j=1;j<=5;j++){
+        for (let i=1;i<=5;i++){
+            if (i>=j) {
+                document.write("*")
+            } else {
+                document.write("&nbsp;&nbsp;")
             }
-        let box=document.write(c+"<br>")
-        c= "";
         }
+        document.write("<br>")
     }
-    </script>
-    
+    for (let j=1;j<=5;j++){
+        for (let i=1;i<=5;i++){
+            if (i<=j) {
+                document.write("*")
+            } else {
+                document.write("&nbsp;&nbsp;")
+            }
+        }
+        document.write("<br>")
+    }
+    let count =5;
+    for (let j=1;j<=5;j++){
+        for (let i=1;i<=5;i++){
+            if (i>=count) {
+                document.write("*")
+            } else {
+                document.write("&nbsp;&nbsp;")
+            }
+        }
+        document.write("<br>")
+        count =count-1;
+    }
+     count =5;
+    for (let j=1;j<=5;j++){
+        for (let i=1;i<=5;i++){
+            if (i<=count) {
+                document.write("*")
+            } else {
+                document.write("&nbsp;&nbsp;")
+            }
+        }
+        document.write("<br>")
+        count=count-1;
+    }
+    // for (let i=0; i<7;i++){
+    //     for (let j=0; j<5;j++){
+    //         if (i+j==5) {
+    //             document.write("&nbsp;&nbsp;")
+    //         } else {
+    //             document.write("*")
+    //         }
+    //     }document.write("<br>")
+    // }document.write("<br>")
+    // for (let i=0; i<7;i++){
+    //     for (let j=0; j<5;j++){
+    //         if (i-j==1
+            
+    //         ) {
+    //             document.write("&nbsp;&nbsp;")
+    //         } else {
+    //             document.write("*")
+    //         }
+    //     }document.write("<br>")
+    // }
+    // let box = 5;
+    // let row, col;
+    // for(row =0; row <box;row++){
+    //     for(col=0;col<box;col++){
+    //         row>=col ? document.write("*"):document.write("&nbsp;&nbsp;")
+    //     }    document.write("<br>")
+    // } document.write("<br>")
+    // for(col=0; col <box;col++){
+    //     for(row=0;row<box;row++){
+    //     col>=box? document.write("6"):document.write("5")
+    // }
+    // document.write("<br>")
+    // } document.write("<br>")
+     </script>
+    <!-- // <style>
+    //     table,tr,td {
+    //         border-collapse: collapse;
+    //     }
+    // </style>
+     -->
 </body>
 </html>
